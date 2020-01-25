@@ -1,0 +1,266 @@
+
+$containerP: 10px;
+
+
+@media screen and (max-width: 1199px) {
+  h1, .h1 {
+    font-size: 52px;
+    line-height: 64px;
+  }
+  h2, .h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .user-info-img {
+    padding-right: 3%;
+  }
+  .user-social-links {
+    margin-bottom: 25px;
+  }
+  .contacts-form-wrap {
+    display: block;
+    .form-block {
+      width: 100%;
+      padding-right: 0;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+  }
+  .contact-info-block {
+    width: 100%;
+
+  }
+  .contact-info-content {
+    position: static;
+    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacts-form {
+    .row {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h1, .h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  h2, .h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+    &>* {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .col-50 {
+      width: 100%;
+    }
+  }
+  .container {
+    padding-left: $containerP;
+    padding-right: $containerP;
+  }
+  .header {
+    position: static;
+    background: #313030;
+  }
+  .organisation.section-padding {
+    padding-top: 50px;
+  }
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .organisation {
+    .btn {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    .video-block {
+      margin-right: auto;
+    }
+  }
+  .provide {
+    .btn {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    .row {
+      .col-50 {
+        .col-50 {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .info-item-icon {
+    margin-bottom: 20px;
+  }
+  .sort-item-wrap {
+    width: calc(100% / 3);
+  }
+  .sort-item {
+    height: 240px;
+  }
+  .sort-head {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .sort-link {
+    padding: 5px 10px;
+  }
+  .user-info-wrap {
+    display: block;
+  }
+  .user-info-img {
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .newsletter {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .newsletter-form {
+    .custom-input {
+      padding: 23px;
+    }
+    .btn {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+  }
+  [class^='col-']>.custom-input {
+    margin-bottom: 20px;
+  }
+  .contacts-form {
+    .row {
+      margin-bottom: 0;
+    }
+  }
+  .contact-info-content {
+    padding: 50px;
+  }
+  .header-nav {
+    padding: 10px 0;
+    position: relative;
+  }
+  .mobile-menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 44px;
+    height: 44px;
+    i {
+      svg {
+        width: 40px;
+        height: 40px;
+        fill: #fff;
+      }
+    }
+  }
+  .open-menu-icon {
+    display: block;
+  }
+  .close-menu-icon {
+    display: none;
+  }
+  .main-menu {
+    @include transition();
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #313030;
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    a {
+      padding: 20px;
+    }
+  }
+  .mobile-menu-check:focus ~.mobile-menu-btn {
+    outline: 1px solid lightblue;
+  }
+  .mobile-menu-check:checked ~.main-menu {
+    opacity: 1;
+    z-index: 2;
+    visibility: visible;
+  }
+  .mobile-menu-check:checked ~.mobile-menu-btn {
+    .open-menu-icon {
+      display: none;
+    }
+    .close-menu-icon {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 767px){
+  h1, .h1 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  h2, .h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .btn {
+    min-width: 180px;
+  }
+  .provide {
+    .row {
+      .col-50 {
+        .col-50 {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .info-item-icon {
+    margin-bottom: 10px;
+  }
+  .info-item {
+    margin-bottom: 20px;
+  }
+  .sort-item-wrap {
+    width: 50%;
+  }
+  .sort-item {
+    height: 200px;
+  }
+  .additional-photo {
+    .item-wrap {
+      width: 50%;
+    }
+  }
+  .newsletter-form {
+    display: block;
+   .custom-input {
+     margin-bottom: 20px;
+   }
+    .btn {
+      width: 100%;
+    }
+  }
+  .footer-wrap {
+    display: block;
+  }
+}
